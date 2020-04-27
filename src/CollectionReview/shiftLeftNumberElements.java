@@ -4,7 +4,7 @@ import java.util.*;
 
 public class shiftLeftNumberElements {
     public static void main(String[] args) {
-        ArrayList<Integer> myArr= new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        ArrayList<Integer> myArr= new ArrayList<>(Arrays.asList(1,2,3,4,5,6));
         shiftLeftNumber(myArr,3);
     }
     public static void shiftLeftNumber(ArrayList<Integer> arr, int n){
