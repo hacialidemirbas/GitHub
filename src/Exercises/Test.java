@@ -8,5 +8,6 @@ public class Test {
         printAll.allDates(2020);
         printAll.numberLoop();
         printAll.printABCD();
+
     }
 }
