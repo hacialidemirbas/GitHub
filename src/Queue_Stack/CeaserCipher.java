@@ -17,5 +17,28 @@ public class CeaserCipher {
             System.out.println("\t After added:"+q);
 
         }
+        System.out.println("Java is fun");
+        System.out.println(ceasarCipher("Java is fun"));
+    }
+    public static String ceasarCipher(String word){
+        String result="";
+        Queue<Integer>key=  new LinkedList<>();
+        key.add(3);
+        key.add(1);
+        key.add(7);
+        key.add(4);
+        key.add(2);
+        key.add(5);
+        char ch;
+        int keyValue;
+        for (int i = 0; i <word.length() ; i++) {
+            ch=word.charAt(i);
+            keyValue = key.poll();
+            ch += keyValue;
+            result += ch;
+            key.add(keyValue);
+        }
+
+        return result;
     }
 }
