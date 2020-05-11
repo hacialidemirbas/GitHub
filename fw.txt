@@ -1,0 +1,9 @@
+Ali 		95
+Veli		96
+Hasan		97
+Ayse		98
+Fatma		99
+Huseyin		100
+Ali 		99
+Hasan		98
+Veli		97

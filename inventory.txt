@@ -1,0 +1,7 @@
+003 Chew Gum    $1.29   100
+005 Cookie      $1.29   70
+007 Chew Gum    $1.29   95
+009 Cracker     $1.29   90
+011 Chew gum    $1.29   100
+013 Cookie      $1.29   75
+015 Chew Gum    $1.29   150
