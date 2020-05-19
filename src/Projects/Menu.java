@@ -1,16 +1,21 @@
 package Projects;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
     private String name;
     private List<String> menuItems;
+
     public Menu(String name, List<String> menuItems) {
         this.name = name;
         this.menuItems = menuItems;
     }
-    public void displayMenu(){
+
+
+    public void displayMenu() throws IOException {
+        BookFile books = new BookFile("books.txt");
         Scanner scanner = new Scanner(System.in);
         int choice = -1;
         while(choice !=0) {
@@ -22,25 +27,27 @@ public class Menu {
             choice = scanner.nextInt();
             switch (choice){
                 case 1:
-
-                    System.out.println("Your choice is 1");
+                    books.addBook(Info.getBookInfo());
                     break;
                 case 2:
-                    System.out.println("Your choice is 2");
+                    books.displayAllBooks();
                     break;
                 case 3:
-                    System.out.println("Your choice is 3");
+                    books.displayLostBooks();
                     break;
                 case 4:
                     System.out.println("Your choice is 4");
                     break;
                 default:
-                    System.out.println("Not menu item");
+                    if(choice != 0) {
+                        System.out.println("Not menu item");
+                    }
                     break;
             }
         }
 
     }
 
-
 }
+
+
